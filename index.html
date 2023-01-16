@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
@@ -12,24 +12,19 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  <header class="header">
-    <img src="./images/logo.svg" class="logo" alt="logo" />
+  <div class="container">
+    <header class="header">
+    <img src="./assets/images/logo.svg" class="logo" alt="logo" />
     <nav class="nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle" />
       <div class="overlay"></div>
       <label class="btn--menu" for="menu-toggle">
-        <img src="./images/icon-menu.svg" class="icon--menu" alt="" />
-        <img src="./images/icon-menu-close.svg" alt="" class="icon--close" />
+        <img src="./assets/images/icon-menu.svg" class="icon--menu" alt="" />
+        <img src="./assets/images/icon-menu-close.svg" alt="" class="icon--close" />
       </label>
-      <ul>
+      <ul class="menu">
         <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
         <li class="menu__item"><a href="#" class="menu__link">New</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Popular</a></li>
@@ -37,8 +32,8 @@
         <li class="menu__item"><a href="#" class="menu__link">Categories</a></li>
       </ul>
     </nav>
-  </header>
-  <main class="main">
+    </header>
+    <main class="main">
     <section class="hero">
       <picture class="hero__picture">
         <source media="(min-width: 480px)" srcset="./assets/images/image-web-3-desktop.jpg" />
@@ -80,7 +75,7 @@
       <h2>Featured articles</h2>
       <ol class="featured__list">
         <li class="featured__item">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc illustration" />
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc picture" />
           <div class="item__box">
             <p class="item-number">01</p>
             <a href="#" class="item-heading">Reviving Retro PCs</a>
@@ -88,7 +83,7 @@
           </div>
         </li>
         <li class="featured__item">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc illustration" />
+          <img src="./assets/images/image-top-laptops.jpg" alt="top laptops picture" />
           <div class="item__box">
             <p class="item-number">02</p>
             <a href="#" class="item-heading">Top 10 Laptops of 2022</a>
@@ -96,7 +91,7 @@
           </div>
         </li>
         <li class="featured__item">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc illustration" />
+          <img src="./assets/images/image-gaming-growth.jpg" alt="gaming picture" />
           <div class="item__box">
             <p class="item-number">03</p>
             <a href="#" class="item-heading">The Growth of Gaming</a>
@@ -105,8 +100,8 @@
         </li>
       </ol>
     </section>
-  </main>
-
+    </main>
+  </div>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/bazinygero">Ivan Zbyrnia</a>.
